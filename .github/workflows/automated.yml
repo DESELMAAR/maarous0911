@@ -53,7 +53,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: hajaraburmeileh/calculator
+          images: maarousamad/maarous0911
           tags: |
             type=ref,event=branch
             type=semver,pattern={{version}}
