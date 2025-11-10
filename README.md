@@ -1,3 +1,7 @@
+
+sample
+
+
 #!/usr/bin/env bash
 # Enforce "SC-1234: short summary" on the first line
 
