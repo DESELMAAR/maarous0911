@@ -3,13 +3,82 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Calculater!</title>
+  <title>Calculator!</title>
   <link rel="stylesheet" href="https://pyscript.net/releases/2022.12.1/pyscript.css" />
   <script defer src="https://pyscript.net/releases/2022.12.1/pyscript.js"></script>
+
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #4f46e5, #9333ea);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+    }
+
+    /* Container */
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      padding: 30px;
+      width: 350px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+
+    /* Input + Button */
+    input, button {
+      width: 80%;
+      padding: 10px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    input {
+      background: #fff;
+      color: #333;
+      text-align: center;
+    }
+
+    button {
+      background-color: #22c55e;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #16a34a;
+    }
+
+    /* Result */
+    #result {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
 
-  <py-script src="./MyCode.py"></py-script>
+  <div class="container">
+    <h1>🧮 Calculator</h1>
+    <py-script src="./MyCode.py"></py-script>
+    <div id="result"></div>
+  </div>
 
 </body>
 </html>
